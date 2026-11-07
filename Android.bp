@@ -1,0 +1,907 @@
+cc_prebuilt_binary {
+    name: "qseecomd",
+    srcs: ["proprietary/vendor/bin/qseecomd"],
+    strip: { none: true },
+    vendor: true,
+    shared_libs: ["libcutils", "libutils", "liblog", "libQSEEComAPI", "libdrmfs", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "camera.vendor.msm8916",
+    srcs: ["proprietary/vendor/lib/hw/camera.vendor.msm8916.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    check_elf_files: false,
+    shared_libs: ["libcamera_client", "liblog", "libutils", "libcutils", "libmmcamera_interface", "libmmjpeg_interface", "libexpat", "libsecnativefeature", "libgui", "libbinder", "libc++"],
+}
+
+cc_prebuilt_library_shared {
+    name: "libAl_Awb",
+    srcs: ["proprietary/vendor/lib/libAl_Awb.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libAl_Awb_Sp", "libcutils", "liblog", "libz"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAl_Awb_Sp",
+    srcs: ["proprietary/vendor/lib/libAl_Awb_Sp.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["liblog", "libz"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libQSEEComAPI",
+    srcs: ["proprietary/vendor/lib/libQSEEComAPI.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libactuator_zc533_camera",
+    srcs: ["proprietary/vendor/lib/libactuator_zc533_camera.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libactuator_zc533_camcorder",
+    srcs: ["proprietary/vendor/lib/libactuator_zc533_camcorder.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libTsAf",
+    srcs: ["proprietary/vendor/lib/libTsAf.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libawb_algo_rear_al",
+    srcs: ["proprietary/vendor/lib/libawb_algo_rear_al.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liblog", "libAl_Awb", "libAl_Awb_Sp", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaec_algo_front",
+    srcs: ["proprietary/vendor/lib/libaec_algo_front.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liblog", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libawb_algo_front_al",
+    srcs: ["proprietary/vendor/lib/libawb_algo_front_al.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liblog", "libAl_Awb", "libAl_Awb_Sp", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaec_algo_rear",
+    srcs: ["proprietary/vendor/lib/libaec_algo_rear.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liblog", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaf_algo_rear",
+    srcs: ["proprietary/vendor/lib/libaf_algo_rear.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liblog", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_common",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_common.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_common_res1",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_common_res1.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k5e3yx_wide_f1_9_common",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k5e3yx_wide_f1_9_common.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_zslshot",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_zslshot.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k5e3yx_wide_f1_9_preview",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k5e3yx_wide_f1_9_preview.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_hfr_1080p_b",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_hfr_1080p_b.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_common_1080p_s",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_common_1080p_s.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_panorama",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_panorama.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_snapshot",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_snapshot.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_uhd_video",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_uhd_video.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_common_res0",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_common_res0.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_common_res3",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_common_res3.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_common_1080p_b",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_common_1080p_b.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_common_res2",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_common_res2.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_preview",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_preview.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_liveshot",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_liveshot.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_default_video",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_default_video.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_hfr_1080p_s",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_hfr_1080p_s.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k3l2xx_hfr_120",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k3l2xx_hfr_120.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdiag",
+    srcs: ["proprietary/vendor/lib/libdiag.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_sr552_vt_15fps",
+    srcs: ["proprietary/vendor/lib/libchromatix_sr552_vt_15fps.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_sr552_preview",
+    srcs: ["proprietary/vendor/lib/libchromatix_sr552_preview.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_sr552_snapshot",
+    srcs: ["proprietary/vendor/lib/libchromatix_sr552_snapshot.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_sr552_vt_30fps",
+    srcs: ["proprietary/vendor/lib/libchromatix_sr552_vt_30fps.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_sr552_default_video",
+    srcs: ["proprietary/vendor/lib/libchromatix_sr552_default_video.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_sr552_liveshot",
+    srcs: ["proprietary/vendor/lib/libchromatix_sr552_liveshot.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_sr552_vt",
+    srcs: ["proprietary/vendor/lib/libchromatix_sr552_vt.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_sr552_zslshot",
+    srcs: ["proprietary/vendor/lib/libchromatix_sr552_zslshot.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_sr552_common",
+    srcs: ["proprietary/vendor/lib/libchromatix_sr552_common.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k5e3yx_wide_f1_9_vt_hd",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k5e3yx_wide_f1_9_vt_hd.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k5e3yx_wide_f1_9_zslshot",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k5e3yx_wide_f1_9_zslshot.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k5e3yx_wide_f1_9_vt",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k5e3yx_wide_f1_9_vt.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k5e3yx_wide_f1_9_snapshot",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k5e3yx_wide_f1_9_snapshot.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libchromatix_s5k5e3yx_wide_f1_9_video",
+    srcs: ["proprietary/vendor/lib/libchromatix_s5k5e3yx_wide_f1_9_video.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdsutils",
+    srcs: ["proprietary/vendor/lib/libdsutils.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libdiag", "liblog"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libidl",
+    srcs: ["proprietary/vendor/lib/libidl.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_cpp_module",
+    srcs: ["proprietary/vendor/lib/libmmcamera2_cpp_module.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liboemcamera", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_c2d_module",
+    srcs: ["proprietary/vendor/lib/libmmcamera2_c2d_module.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liboemcamera", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_imglib_modules",
+    srcs: ["proprietary/vendor/lib/libmmcamera2_imglib_modules.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["liblog", "libcutils", "liboemcamera", "libmmcamera_imglib", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_image_stab",
+    srcs: ["proprietary/vendor/lib/libmmcamera_image_stab.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["liblog", "libcutils"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_isp_modules",
+    srcs: ["proprietary/vendor/lib/libmmcamera2_isp_modules.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["liblog", "libcutils", "liboemcamera", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_frame_algorithm",
+    srcs: ["proprietary/vendor/lib/libmmcamera2_frame_algorithm.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_vpe_module",
+    srcs: ["proprietary/vendor/lib/libmmcamera2_vpe_module.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liboemcamera", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_stats_modules",
+    srcs: ["proprietary/vendor/lib/libmmcamera2_stats_modules.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liboemcamera", "libmmcamera2_stats_algorithm", "libmmcamera_image_stab", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_is",
+    srcs: ["proprietary/vendor/lib/libmmcamera2_is.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_stats_algorithm",
+    srcs: ["proprietary/vendor/lib/libmmcamera2_stats_algorithm.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libawb_algo_front_al", "libawb_algo_rear_al", "libAl_Awb", "libAl_Awb_Sp", "libaec_algo_rear", "libaec_algo_front", "libaf_algo_rear", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_wnr_module",
+    srcs: ["proprietary/vendor/lib/libmmcamera2_wnr_module.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liboemcamera", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_hdr_gb_lib",
+    srcs: ["proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libfastcvopt", "libmmcamera_imglib", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_hdr_lib",
+    srcs: ["proprietary/vendor/lib/libmmcamera_hdr_lib.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_cac2_lib_13M",
+    srcs: ["proprietary/vendor/lib/libmmcamera_cac2_lib_13M.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libOpenCL", "libcutils"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_pproc_modules",
+    srcs: ["proprietary/vendor/lib/libmmcamera2_pproc_modules.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["liblog", "libcutils", "libmmcamera2_cpp_module", "liboemcamera", "libmmcamera2_c2d_module", "libmmcamera2_imglib_modules", "libmmcamera2_wnr_module", "libmmcamera2_vpe_module", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_imglib",
+    srcs: ["proprietary/vendor/lib/libmmcamera_imglib.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liblog", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_sensor_modules",
+    srcs: ["proprietary/vendor/lib/libmmcamera2_sensor_modules.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["liblog", "libcutils", "liboemcamera", "libxml2", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera2_iface_modules",
+    srcs: ["proprietary/vendor/lib/libmmcamera2_iface_modules.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["liblog", "libcutils", "liboemcamera", "libmmcamera2_isp_modules", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_s5k3l2xx",
+    srcs: ["proprietary/vendor/lib/libmmcamera_s5k3l2xx.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_silicon_sr552_eeprom",
+    srcs: ["proprietary/vendor/lib/libmmcamera_silicon_sr552_eeprom.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libmmcamera2_sensor_modules", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmjpeg",
+    srcs: ["proprietary/vendor/lib/libmmjpeg.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liblog", "libutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_m24128s_eeprom",
+    srcs: ["proprietary/vendor/lib/libmmcamera_m24128s_eeprom.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libmmcamera2_sensor_modules", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_pdafcamif",
+    srcs: ["proprietary/vendor/lib/libmmcamera_pdafcamif.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_s5k5e3yx",
+    srcs: ["proprietary/vendor/lib/libmmcamera_s5k5e3yx.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_tintless_bg_pca_algo",
+    srcs: ["proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_zc533_eeprom",
+    srcs: ["proprietary/vendor/lib/libmmcamera_zc533_eeprom.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libmmcamera2_sensor_modules", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmqjpeg_codec",
+    srcs: ["proprietary/vendor/lib/libmmqjpeg_codec.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liblog", "libmmjpeg", "libcrypto", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_tintless_algo",
+    srcs: ["proprietary/vendor/lib/libmmcamera_tintless_algo.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_sr552",
+    srcs: ["proprietary/vendor/lib/libmmcamera_sr552.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmipl",
+    srcs: ["proprietary/vendor/lib/libmmipl.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_wavelet_lib",
+    srcs: ["proprietary/vendor/lib/libmmcamera_wavelet_lib.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libadsprpc"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmcamera_pdaf",
+    srcs: ["proprietary/vendor/lib/libmmcamera_pdaf.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libutils", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_csi",
+    srcs: ["proprietary/vendor/lib/libqmi_csi.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liblog", "libqmi_encdec", "libutils"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_cci",
+    srcs: ["proprietary/vendor/lib/libqmi_cci.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liblog", "libqmi_client_qmux", "libqmi_encdec", "libutils"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmiservices",
+    srcs: ["proprietary/vendor/lib/libqmiservices.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libidl"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_encdec",
+    srcs: ["proprietary/vendor/lib/libqmi_encdec.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libutils"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcci_legacy",
+    srcs: ["proprietary/vendor/lib/libqcci_legacy.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libdiag", "libidl", "liblog", "libqmi", "libqmi_client_qmux"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi",
+    srcs: ["proprietary/vendor/lib/libqmi.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libdiag", "libdsutils", "libidl", "liblog", "libqmi_client_qmux", "libqmiservices"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboemcamera",
+    srcs: ["proprietary/vendor/lib/liboemcamera.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "liblog", "libc++"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_common_so",
+    srcs: ["proprietary/vendor/lib/libqmi_common_so.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libutils"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_client_qmux",
+    srcs: ["proprietary/vendor/lib/libqmi_client_qmux.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libdiag", "libdsutils", "libidl", "liblog", "libqmiservices"],
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqomx_jpegenc",
+    srcs: ["proprietary/vendor/lib/libqomx_jpegenc.so"],
+    strip: { none: true },
+    vendor: true,
+    compile_multilib: "32",
+    shared_libs: ["libcutils", "libmmqjpeg_codec", "libmmjpeg", "libc++"],
+    check_elf_files: false,
+}
